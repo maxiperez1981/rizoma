@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup diario de la base de datos de Rizoma
+After=network-online.target postgresql.service
+
+[Service]
+Type=oneshot
+User=almaapp
+WorkingDirectory=/home/alma-academica
+ExecStart=/home/alma-academica/backup_db.sh

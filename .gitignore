@@ -1,0 +1,8 @@
+.env
+env_before_*
+__pycache__/
+*.pyc
+backups/
+*.log
+.claude/
+static/video/

@@ -1,0 +1,1572 @@
+{
+ "resumen": {
+  "votantes": [
+   "gpt-4.1",
+   "gpt-4o-mini",
+   "heuristica",
+   "o4-mini"
+  ],
+  "tasa_de_si_por_tipo": {
+   "control": {
+    "n": 25,
+    "gpt-4.1": 0.88,
+    "gpt-4o-mini": 1.0,
+    "heuristica": 0.16,
+    "o4-mini": 0.8,
+    "consenso": 0.76
+   },
+   "indirecto": {
+    "n": 25,
+    "gpt-4.1": 1.0,
+    "gpt-4o-mini": 1.0,
+    "heuristica": 0.28,
+    "o4-mini": 0.957,
+    "consenso": 0.96
+   },
+   "similitud": {
+    "n": 25,
+    "gpt-4.1": 1.0,
+    "gpt-4o-mini": 1.0,
+    "heuristica": 1.0,
+    "o4-mini": 1.0,
+    "consenso": 1.0
+   }
+  },
+  "acuerdo_entre_votantes": {
+   "gpt-4.1 / gpt-4o-mini": {
+    "acuerdo": 0.96,
+    "kappa": 0.0,
+    "n": 75
+   },
+   "gpt-4.1 / heuristica": {
+    "acuerdo": 0.52,
+    "kappa": 0.074,
+    "n": 75
+   },
+   "gpt-4.1 / o4-mini": {
+    "acuerdo": 0.885,
+    "kappa": -0.049,
+    "n": 61
+   },
+   "gpt-4o-mini / heuristica": {
+    "acuerdo": 0.48,
+    "kappa": 0.0,
+    "n": 75
+   },
+   "gpt-4o-mini / o4-mini": {
+    "acuerdo": 0.918,
+    "kappa": 0.0,
+    "n": 61
+   },
+   "heuristica / o4-mini": {
+    "acuerdo": 0.508,
+    "kappa": 0.079,
+    "n": 61
+   }
+  },
+  "unanimes": 0.467,
+  "n_total": 75
+ },
+ "items": [
+  {
+   "tipo": "similitud",
+   "a": "Ignacio Navarro",
+   "b": "Florencia Cabrera",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 74,
+    "o4-mini": null,
+    "heuristica": 35
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Ignacio Navarro",
+   "b": "Florencia Cabrera",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 72,
+    "o4-mini": 75,
+    "heuristica": 35
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Ignacio Navarro",
+   "b": "Franco Villalba",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": false,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 25,
+    "heuristica": 26
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Nicolas Vera",
+   "b": "Martina Lopez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 95,
+    "o4-mini": 92,
+    "heuristica": 100
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Nicolas Vera",
+   "b": "Tomas Pereyra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 82,
+    "o4-mini": 85,
+    "heuristica": 33
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Nicolas Vera",
+   "b": "Ivan Arce",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 80,
+    "heuristica": 31
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Lucia Medina",
+   "b": "Tomas Pereyra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 85,
+    "heuristica": 87
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Lucia Medina",
+   "b": "Rocio Benitez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 61,
+    "o4-mini": 80,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Lucia Medina",
+   "b": "Valentina Nunez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 48,
+    "o4-mini": 75,
+    "heuristica": 25
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Paula Mansilla",
+   "b": "Carolina Vega",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 72,
+    "o4-mini": null,
+    "heuristica": 37
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Paula Mansilla",
+   "b": "Ivan Arce",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 78,
+    "o4-mini": 75,
+    "heuristica": 33
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Paula Mansilla",
+   "b": "Lautaro Gimenez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 70,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Noelia Fuentes",
+   "b": "Matias Ferreyra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 82,
+    "o4-mini": 65,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Noelia Fuentes",
+   "b": "Franco Villalba",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 70,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Noelia Fuentes",
+   "b": "Pablo Fernandez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": null,
+    "heuristica": 24
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "similitud",
+   "a": "Milagros Paz",
+   "b": "Damian Castro",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 93,
+    "o4-mini": null,
+    "heuristica": 84
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Milagros Paz",
+   "b": "Franco Villalba",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 75,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Milagros Paz",
+   "b": "Rocio Benitez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 54,
+    "o4-mini": 75,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Diego Ledesma",
+   "b": "Federico Sosa",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 78,
+    "o4-mini": 85,
+    "heuristica": 44
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Diego Ledesma",
+   "b": "Julieta Farias",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 75,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Diego Ledesma",
+   "b": "Abril Dominguez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 65,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Agustin Torres",
+   "b": "Valentina Nunez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 88,
+    "heuristica": 100
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Agustin Torres",
+   "b": "Emiliano Rivas",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": false,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 56,
+    "o4-mini": 15,
+    "heuristica": 28
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Agustin Torres",
+   "b": "Gonzalo Paredes",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 75,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Sebastian Luna",
+   "b": "Joaquin Molina",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 74,
+    "o4-mini": 80,
+    "heuristica": 37
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Sebastian Luna",
+   "b": "Bruno Cejas",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 65,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Sebastian Luna",
+   "b": "Valentina Nunez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": false,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 65,
+    "gpt-4.1": 25,
+    "o4-mini": null,
+    "heuristica": 24
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "similitud",
+   "a": "Joaquin Molina",
+   "b": "Ailen Duarte",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 90,
+    "heuristica": 89
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Joaquin Molina",
+   "b": "Lautaro Gimenez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 48,
+    "o4-mini": 75,
+    "heuristica": 24
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Joaquin Molina",
+   "b": "Ivan Arce",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": false,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 25,
+    "heuristica": 29
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Victoria Arias",
+   "b": "Joaquin Molina",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 74,
+    "o4-mini": 82,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Victoria Arias",
+   "b": "Alan Mendez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 74,
+    "o4-mini": null,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "control",
+   "a": "Victoria Arias",
+   "b": "Joaquin Molina",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 78,
+    "o4-mini": 75,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Valentina Nunez",
+   "b": "Agustin Torres",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 85,
+    "heuristica": 100
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Valentina Nunez",
+   "b": "Emiliano Rivas",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 54,
+    "o4-mini": 75,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Valentina Nunez",
+   "b": "Bianca Costa",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 78,
+    "heuristica": 25
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Ramiro Aguirre",
+   "b": "Noelia Fuentes",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 74,
+    "o4-mini": null,
+    "heuristica": 41
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Ramiro Aguirre",
+   "b": "Ezequiel Herrera",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 78,
+    "heuristica": 29
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Ramiro Aguirre",
+   "b": "Mateo Silva",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": false,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 67,
+    "o4-mini": 25,
+    "heuristica": 29
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Camila Rios",
+   "b": "Mateo Silva",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 85,
+    "heuristica": 81
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Camila Rios",
+   "b": "Ignacio Navarro",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 65,
+    "heuristica": 30
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Camila Rios",
+   "b": "Valentina Nunez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": false,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 27,
+    "o4-mini": 65,
+    "heuristica": 25
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Alan Mendez",
+   "b": "Victoria Arias",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 67,
+    "o4-mini": 75,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Alan Mendez",
+   "b": "Victoria Arias",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 67,
+    "o4-mini": 75,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Alan Mendez",
+   "b": "Bruno Cejas",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": null,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "similitud",
+   "a": "Candela Quiroga",
+   "b": "Malena Ortiz",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 74,
+    "o4-mini": 80,
+    "heuristica": 31
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Candela Quiroga",
+   "b": "Ezequiel Herrera",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 45,
+    "o4-mini": 75,
+    "heuristica": 25
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Candela Quiroga",
+   "b": "Nicolas Vera",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 75,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Lautaro Gimenez",
+   "b": "Diego Ledesma",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 74,
+    "o4-mini": 75,
+    "heuristica": 36
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Lautaro Gimenez",
+   "b": "Rocio Benitez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 80,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Lautaro Gimenez",
+   "b": "Abril Dominguez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 78,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Rocio Benitez",
+   "b": "Santiago Ibarra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": null,
+    "heuristica": 61
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Rocio Benitez",
+   "b": "Lautaro Gimenez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 54,
+    "o4-mini": 80,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Rocio Benitez",
+   "b": "Tomas Pereyra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 72,
+    "o4-mini": 75,
+    "heuristica": 32
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Lucas Campos",
+   "b": "Martina Lopez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 78,
+    "o4-mini": null,
+    "heuristica": 42
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Lucas Campos",
+   "b": "Gonzalo Paredes",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 75,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Lucas Campos",
+   "b": "Sofia Acosta",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": null,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "similitud",
+   "a": "Emiliano Rivas",
+   "b": "Tomas Pereyra",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 87,
+    "o4-mini": 85,
+    "heuristica": 38
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Emiliano Rivas",
+   "b": "Lautaro Gimenez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 75,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Emiliano Rivas",
+   "b": "Valentina Nunez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": false,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 27,
+    "o4-mini": 60,
+    "heuristica": 26
+   },
+   "consenso": false,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Bruno Cejas",
+   "b": "Sofia Acosta",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 88,
+    "heuristica": 100
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Bruno Cejas",
+   "b": "Gonzalo Paredes",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 85,
+    "heuristica": 31
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Bruno Cejas",
+   "b": "Ivan Arce",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": false,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 25,
+    "heuristica": 31
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Federico Sosa",
+   "b": "Diego Ledesma",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 78,
+    "o4-mini": 80,
+    "heuristica": 44
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Federico Sosa",
+   "b": "Julieta Farias",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": 65,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Federico Sosa",
+   "b": "Candela Quiroga",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 54,
+    "o4-mini": 78,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Sofia Acosta",
+   "b": "Bruno Cejas",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": 85,
+    "heuristica": 100
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Sofia Acosta",
+   "b": "Damian Castro",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": 65,
+    "heuristica": 27
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Sofia Acosta",
+   "b": "Micaela Robledo",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 68,
+    "o4-mini": null,
+    "heuristica": 29
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "similitud",
+   "a": "Ailen Duarte",
+   "b": "Joaquin Molina",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 92,
+    "o4-mini": null,
+    "heuristica": 89
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 3
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Ailen Duarte",
+   "b": "Lautaro Gimenez",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 54,
+    "o4-mini": 75,
+    "heuristica": 25
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "control",
+   "a": "Ailen Duarte",
+   "b": "Bianca Costa",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 61,
+    "o4-mini": 82,
+    "heuristica": 28
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  },
+  {
+   "tipo": "similitud",
+   "a": "Josefina Salas",
+   "b": "Agustin Torres",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": true
+   },
+   "scores": {
+    "gpt-4o-mini": 85,
+    "gpt-4.1": 72,
+    "o4-mini": 75,
+    "heuristica": 35
+   },
+   "consenso": true,
+   "unanime": true,
+   "n_votos": 4
+  },
+  {
+   "tipo": "indirecto",
+   "a": "Josefina Salas",
+   "b": "Renata Esposito",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": null,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 62,
+    "o4-mini": null,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 3
+  },
+  {
+   "tipo": "control",
+   "a": "Josefina Salas",
+   "b": "Renata Esposito",
+   "votos": {
+    "gpt-4o-mini": true,
+    "gpt-4.1": true,
+    "o4-mini": true,
+    "heuristica": false
+   },
+   "scores": {
+    "gpt-4o-mini": 75,
+    "gpt-4.1": 48,
+    "o4-mini": 75,
+    "heuristica": 26
+   },
+   "consenso": true,
+   "unanime": false,
+   "n_votos": 4
+  }
+ ]
+}

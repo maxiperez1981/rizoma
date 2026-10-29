@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="es" data-theme="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rizoma conecta personas y proyectos a través de los temas que comparten, incluso cuando el vínculo pasa por un tercero. Producto de Open Lab.">
+  <title>Rizoma — Emergen las conexiones</title>
+  <link rel="icon" href="static/favicon.svg?v=20260808-curves" type="image/svg+xml">
+  <link rel="stylesheet" href="static/css/fonts.css?v=20261018-fuentes">
+  <link rel="stylesheet" href="static/css/styles.css?v=20261025-recursos2">
+</head>
+<body>
+
+<!-- ── Auth overlay ─────────────────────────────────────────────────────────── -->
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-box">
+    <div class="auth-logo">
+      <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Rizoma">
+        <g transform="translate(32 31) scale(.285)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-101 3C-110 -18 -94 -40 -72 -49C-51 -62 -46 -83 -27 -68C-11 -55 4 -65 20 -55C38 -43 47 -52 62 -40C82 -21 82 -15 97 -3C111 12 96 30 82 45C73 64 68 76 53 88C34 106 20 71 3 84C-18 100 -30 84 -47 94C-70 104 -65 59 -88 39C-111 22 -116 12 -101 3Z" stroke="#8f8f8f" stroke-width="4.4"/>
+          <path d="M-73 -49C-91 -28 -76 -3 -58 16C-72 21 -83 28 -88 39M-58 16C-47 -4 -43 -52 -27 -68M-27 -68C-18 -43 -25 -26 -13 -8C-1 -28 5 -44 20 -55M-13 -8C-15 19 -3 52 3 84C18 68 35 78 53 88M-13 -8C-35 12 -35 58 -47 94" stroke="#cfcfcf" stroke-width="3.2"/>
+          <path d="M20 -55C41 -68 44 -33 62 -40C48 -26 58 -9 43 3C60 -12 80 -19 97 -3M43 3C63 11 67 32 82 45C73 56 65 74 53 88M-13 -8C4 0 23 -18 43 3" stroke="#c8102e" stroke-width="5.8"/>
+          <path d="M-58 16C-38 30 -31 -5 -13 -8C-2 20 -9 55 3 84M-101 3C-84 18 -75 1 -58 16M-47 94C-50 68 -74 58 -88 39M-72 -49C-55 -39 -46 -63 -27 -68" stroke="#c8102e" stroke-width="4.8"/>
+          <path d="M-74 -6C-91 -4 -88 13 -101 3M10 38C23 36 31 10 43 3M63 18C79 7 88 19 97 -3M-31 38C-18 26 -25 6 -13 -8" stroke="#b6b6b6" stroke-width="2.7"/>
+        </g>
+        <g transform="translate(32 31) scale(.285)">
+          <circle cx="-101" cy="3" r="9.4" fill="#8f8f8f"/>
+          <circle cx="-72" cy="-49" r="11.7" fill="#c8102e"/>
+          <circle cx="-27" cy="-68" r="8.4" fill="#6f6f6f"/>
+          <circle cx="-58" cy="16" r="10.6" fill="#d7d7d7"/>
+          <circle cx="-88" cy="39" r="8.9" fill="#b8b8b8"/>
+          <circle cx="-47" cy="94" r="12.4" fill="#c8102e"/>
+          <circle cx="3" cy="84" r="9.1" fill="#7d7d7d"/>
+          <circle cx="-13" cy="-8" r="11.8" fill="#c8102e"/>
+          <circle cx="20" cy="-55" r="12.1" fill="#e5e5e5"/>
+          <circle cx="62" cy="-40" r="9.1" fill="#9b9b9b"/>
+          <circle cx="97" cy="-3" r="12.7" fill="#c8102e"/>
+          <circle cx="82" cy="45" r="10.1" fill="#b8b8b8"/>
+          <circle cx="53" cy="88" r="11.9" fill="#6f6f6f"/>
+          <circle cx="43" cy="3" r="13.4" fill="#c8102e"/>
+        </g>
+      </svg>
+      <h2>Rizoma</h2>
+      <p>Emergen las conexiones</p>
+    </div>
+    <div class="auth-tabs">
+      <button class="auth-tab active" onclick="switchAuthTab('login')">Ingresar</button>
+      <button class="auth-tab" onclick="switchAuthTab('register')">Registrarse</button>
+    </div>
+    <div id="authError" class="auth-error"></div>
+
+    <div id="loginForm">
+      <div class="form-group"><label>Email</label><input type="email" id="loginEmail" placeholder="tu@email.com"></div>
+      <div class="form-group"><label>Contraseña</label><input type="password" id="loginPass" placeholder="••••••"></div>
+      <button class="btn" style="width:100%" onclick="doLogin()">Ingresar</button>
+    </div>
+
+    <div id="registerForm" style="display:none">
+      <div class="form-group"><label>Nombre completo</label><input type="text" id="regName" placeholder="Tu nombre"></div>
+      <div class="form-group"><label>Email institucional</label><input type="email" id="regEmail" placeholder="tu@universidad.edu.ar"></div>
+      <div class="form-group"><label>Contraseña</label><input type="password" id="regPass" placeholder="Mínimo 10 caracteres"></div>
+      <div class="form-group">
+        <label>Rol</label>
+        <select id="regRole">
+          <option value="student">Estudiante</option>
+          <option value="teacher">Docente / Investigador</option>
+          <option value="org">Organización</option>
+        </select>
+      </div>
+      <div class="form-group"><label>Institución</label><input type="text" id="regInst" placeholder="Ej: UNQ, UNLP, UBA..."></div>
+      <label class="aviso-check"><input type="checkbox" id="regAviso"> Leí el <a href="/privacidad" target="_blank" rel="noopener">aviso de privacidad</a>. Esta confirmación no autoriza difusión ni usos adicionales de mis datos.</label>
+      <button class="btn" style="width:100%" onclick="doRegister()">Crear cuenta</button>
+    </div>
+    <p class="auth-privacidad"><a href="/privacidad" target="_blank" rel="noopener">Privacidad y uso de los datos</a></p>
+  </div>
+</div>
+
+<!-- ── Aviso de privacidad pendiente ─────────────────────────────────────────── -->
+<div class="modal-overlay" id="avisoOverlay">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="avisoTitulo">
+    <h3 id="avisoTitulo">Aviso de privacidad</h3>
+    <p style="font-size:13px;color:var(--muted)">Antes de usar las funciones que tratan tus datos con IA (armar tu grafo desde un CV, editar tu perfil, pedir explicaciones o preguntar a la red), leé el aviso vigente: qué se registra, quién lo ve, qué se envía a servicios de IA, cuánto se conserva y cómo pedir una copia o la baja.</p>
+    <p><a href="/privacidad" target="_blank" rel="noopener">Leer el aviso de privacidad (versión <span id="avisoVersion">…</span>)</a></p>
+    <label class="aviso-check"><input type="checkbox" id="avisoLeido" onchange="document.getElementById('avisoConfirmar').disabled=!this.checked"> Leí esta versión del aviso. Esta confirmación no autoriza difusión pública ni usos adicionales.</label>
+    <div class="modal-foot" style="margin-top:16px">
+      <button class="btn secondary" onclick="cerrarAvisoPrivacidad()">Ahora no</button>
+      <button class="btn" id="avisoConfirmar" disabled onclick="confirmarAvisoPrivacidad()">Registrar lectura</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Search overlay ───────────────────────────────────────────────────────── -->
+<div class="overlay" id="sOverlay" onclick="if(event.target===this)closeSrch()">
+  <div class="search-modal">
+    <input id="sInput" type="search" placeholder="Buscar grafos, conocimientos, personas y proyectos..." oninput="filterSrch()" autocomplete="off">
+    <div class="s-results" id="sResults"></div>
+  </div>
+</div>
+
+<!-- ── Composer modal ───────────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="cOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <h3>Sumar una señal al grafo</h3>
+    <textarea id="cText" placeholder="Describí un conocimiento, búsqueda, aprendizaje o evidencia en construcción..."></textarea>
+    <div class="modal-types">
+      <button class="modal-type sel" onclick="selType(this)">Avance</button>
+      <button class="modal-type" onclick="selType(this)">Proyecto</button>
+      <button class="modal-type" onclick="selType(this)">Credencial</button>
+      <button class="modal-type" onclick="selType(this)">Mentoría</button>
+    </div>
+    <div class="modal-foot">
+      <button class="btn secondary" onclick="document.getElementById('cOverlay').classList.remove('open')">Cancelar</button>
+      <button class="btn" onclick="submitPost()">Sumar señal</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Apply modal ──────────────────────────────────────────────────────────── -->
+<div class="modal-overlay apply-modal" id="applyOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <h3>Explorar esta oportunidad</h3>
+    <div class="project-preview" id="applyProjectPreview"></div>
+    <div class="form-group">
+      <label>Mensaje al tutor (opcional)</label>
+      <textarea id="applyMsg" placeholder="Contá qué podrías aportar, qué querés aprender y por qué te interesa conversar con el equipo..." style="min-height:80px"></textarea>
+    </div>
+    <div id="applyResult" style="display:none" class="safe-box"></div>
+    <div class="modal-foot">
+      <button class="btn secondary" onclick="document.getElementById('applyOverlay').classList.remove('open')">Cancelar</button>
+      <button class="btn" id="applyBtn" onclick="confirmApply()">Abrir conversación</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── Edit profile modal ───────────────────────────────────────────────────── -->
+<div class="modal-overlay" id="editOverlay" onclick="if(event.target===this)this.classList.remove('open')">
+  <div class="modal-box">
+    <h3>Editar datos base</h3>
+    <div class="edit-form">
+      <div><label>Nombre</label><input type="text" id="editName"></div>
+      <div><label>Institución</label><input type="text" id="editInst"></div>
+      <div><label>Bio</label><textarea id="editBio" style="min-height:80px"></textarea></div>
+    </div>
+    <div class="modal-foot" style="margin-top:16px">
+      <button class="btn secondary" onclick="document.getElementById('editOverlay').classList.remove('open')">Cancelar</button>
+      <button class="btn" onclick="saveProfile()">Guardar cambios</button>
+    </div>
+  </div>
+</div>
+
+<div id="toasts"></div>
+
+<header>
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 64 64" role="img" aria-label="Rizoma">
+      <g transform="translate(32 31) scale(.285)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M-101 3C-110 -18 -94 -40 -72 -49C-51 -62 -46 -83 -27 -68C-11 -55 4 -65 20 -55C38 -43 47 -52 62 -40C82 -21 82 -15 97 -3C111 12 96 30 82 45C73 64 68 76 53 88C34 106 20 71 3 84C-18 100 -30 84 -47 94C-70 104 -65 59 -88 39C-111 22 -116 12 -101 3Z" stroke="#8f8f8f" stroke-width="4.4"/>
+          <path d="M-73 -49C-91 -28 -76 -3 -58 16C-72 21 -83 28 -88 39M-58 16C-47 -4 -43 -52 -27 -68M-27 -68C-18 -43 -25 -26 -13 -8C-1 -28 5 -44 20 -55M-13 -8C-15 19 -3 52 3 84C18 68 35 78 53 88M-13 -8C-35 12 -35 58 -47 94" stroke="#cfcfcf" stroke-width="3.2"/>
+          <path d="M20 -55C41 -68 44 -33 62 -40C48 -26 58 -9 43 3C60 -12 80 -19 97 -3M43 3C63 11 67 32 82 45C73 56 65 74 53 88M-13 -8C4 0 23 -18 43 3" stroke="#c8102e" stroke-width="5.8"/>
+          <path d="M-58 16C-38 30 -31 -5 -13 -8C-2 20 -9 55 3 84M-101 3C-84 18 -75 1 -58 16M-47 94C-50 68 -74 58 -88 39M-72 -49C-55 -39 -46 -63 -27 -68" stroke="#c8102e" stroke-width="4.8"/>
+          <path d="M-74 -6C-91 -4 -88 13 -101 3M10 38C23 36 31 10 43 3M63 18C79 7 88 19 97 -3M-31 38C-18 26 -25 6 -13 -8" stroke="#b6b6b6" stroke-width="2.7"/>
+        </g>
+      <g transform="translate(32 31) scale(.285)">
+        <circle cx="-101" cy="3" r="9.4" fill="#8f8f8f"/>
+        <circle cx="-72" cy="-49" r="11.7" fill="#c8102e"/>
+        <circle cx="-27" cy="-68" r="8.4" fill="#6f6f6f"/>
+        <circle cx="-58" cy="16" r="10.6" fill="#d7d7d7"/>
+        <circle cx="-88" cy="39" r="8.9" fill="#b8b8b8"/>
+        <circle cx="-47" cy="94" r="12.4" fill="#c8102e"/>
+        <circle cx="3" cy="84" r="9.1" fill="#7d7d7d"/>
+        <circle cx="-13" cy="-8" r="11.8" fill="#c8102e"/>
+        <circle cx="20" cy="-55" r="12.1" fill="#e5e5e5"/>
+        <circle cx="62" cy="-40" r="9.1" fill="#9b9b9b"/>
+        <circle cx="97" cy="-3" r="12.7" fill="#c8102e"/>
+        <circle cx="82" cy="45" r="10.1" fill="#b8b8b8"/>
+        <circle cx="53" cy="88" r="11.9" fill="#6f6f6f"/>
+        <circle cx="43" cy="3" r="13.4" fill="#c8102e"/>
+      </g>
+    </svg>
+    <div><h1>Rizoma</h1><span>Emergen las conexiones</span></div>
+  </div>
+  <nav>
+    <button data-nav="inicio" class="active" onclick="showTab('inicio',this)">Subir CV</button>
+    <button data-nav="rizoma" onclick="showTab('rizoma',this)">Vincular grafo</button>
+    <button data-nav="recursos" onclick="showTab('recursos',this)">Recursos</button>
+    <button data-nav="proyectos" onclick="showTab('proyectos',this)">Proyectos</button>
+    <button data-nav="credenciales" onclick="showTab('credenciales',this)">Credenciales</button>
+    <button data-nav="matches" class="icon-text-btn" onclick="showTab('matches',this)">Conexiones IA<span class="notif-count" id="matchNotifCount" style="display:none">0</span></button>
+    <button data-nav="manual" onclick="showTab('manual',this)">Manual</button>
+    <button data-nav="observatorio" id="navObservatorio" onclick="showTab('observatorio',this)" style="display:none">Observatorio</button>
+  </nav>
+  <div class="header-actions">
+    <button class="search-btn" type="button" onclick="openSrch()" title="Buscar">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <span>Buscar</span>
+    </button>
+    <button data-nav="perfil" class="icon-text-btn" onclick="showTab('perfil',this)">Datos base</button>
+    <button data-nav="mensajes" class="icon-text-btn" onclick="showTab('mensajes',this)">Mensajes<span class="notif-count" id="notifCount" style="display:none">0</span></button>
+    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" title="Alternar modo oscuro">☾</button>
+    <button class="logout-btn" onclick="logout()">Salir</button>
+  </div>
+</header>
+
+<main class="rizoma-workspace">
+  <!-- LEFT SIDEBAR -->
+  <aside class="panel base-panel">
+    <div class="head"><span class="panel-kicker">Base</span><h3>Mi grafo</h3><p>Grafo de conocimientos generado desde tu CV o trayectoria.</p></div>
+    <div class="body">
+      <div class="profile-cover"></div>
+      <div class="profile">
+        <div class="avatar" id="sidebarAvatar">?</div>
+        <div><strong id="sidebarName">Cargando…</strong><span id="sidebarRole"></span></div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><span>Credenciales</span><strong id="kpiCreds">—</strong></div>
+        <div class="kpi"><span>Proyectos</span><strong id="kpiProjects">—</strong></div>
+        <div class="kpi"><span>Puentes</span><strong id="kpiConns">—</strong></div>
+        <div class="kpi"><span>Rizoma</span><strong id="kpiComp">—</strong></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-label"><span>Completitud del grafo</span><span id="progPct">0%</span></div>
+        <div class="progress-track"><div class="progress-fill" id="progFill" style="width:0%"></div></div>
+        <div class="progress-hints" id="progHints"></div>
+      </div>
+      <div class="safe-box" style="margin-top:12px">
+        <strong>Regla cultural:</strong> el grafo crece con conocimientos extraídos, aprendizajes buscados y evidencia construida con otros. No por exhibición de perfil.
+      </div>
+      <button class="btn" style="width:100%;margin-top:12px" onclick="showTab('perfil',document.querySelector('[data-nav=perfil]'))">Editar datos base</button>
+    </div>
+  </aside>
+
+  <!-- CENTER -->
+  <section class="panel workspace-panel">
+    <div class="head"><span class="panel-kicker">Lienzo</span><h3>Mesa de trabajo</h3><p id="tabHelp">Subí tu CV, generá un grafo de conocimientos y vinculalo con otros grafos mediante inteligencia artificial.</p></div>
+    <div class="body">
+
+      <!-- INICIO -->
+      <div id="inicio" class="tabs active">
+        <div class="hero-strip">
+          <div>
+            <span class="eyebrow">Ecosistema académico UNQ</span>
+            <h2>Subí tu CV, generá un grafo de conocimientos y vinculalo con otros grafos mediante inteligencia artificial.</h2>
+            <p>Rizoma toma tu CV o trayectoria, extrae nodos de conocimiento, aprendizajes e intereses, y arma un grafo vivo que puede vincularse con otros grafos sin convertir personas en ranking.</p>
+            <div class="hero-cta" aria-label="Acciones principales">
+              <button class="hero-btn primary" onclick="showTab('inicio',document.querySelector('[data-nav=inicio]'));setTimeout(()=>document.getElementById('cv').focus(),160)">Subir CV y generar grafo</button>
+              <button class="hero-btn secondary" onclick="showTab('rizoma',document.querySelector('[data-nav=rizoma]'))">Vincular mi grafo</button>
+              <button class="hero-btn secondary" onclick="showTab('proyectos',document.querySelector('[data-nav=proyectos]'))">Explorar proyectos abiertos</button>
+            </div>
+            <p class="hero-cta-note">Primero subís tu CV o pegás tu trayectoria. La IA arma un grafo de conocimientos; después vincula ese grafo con personas, proyectos y conversaciones donde puede producirse algo útil para ambas partes.</p>
+            <div class="hero-flow" aria-label="Flujo Rizoma">
+              <div><span>1</span><strong>Subí tu CV</strong><em>Trayectoria, conocimientos y evidencias.</em></div>
+              <div><span>2</span><strong>Generá el grafo</strong><em>Nodos de saber, aprendizaje e interés.</em></div>
+              <div><span>3</span><strong>Vinculalo</strong><em>Otros grafos, personas y proyectos.</em></div>
+            </div>
+            <div class="institutional-note">
+              Producto desarrollado desde <strong>Open Lab</strong>, con <strong>Maximiliano Perez</strong>.
+            </div>
+          </div>
+          <div class="hero-metrics">
+            <div><strong id="heroMetricProjects">—</strong><span>proyectos activos</span></div>
+            <div><strong>IA</strong><span>conexión ética</span></div>
+            <div><strong>red</strong><span>otros grafos</span></div>
+          </div>
+        </div>
+        <div class="composer">
+          <div class="composer-row">
+            <div class="avatar" id="composerAvatar">?</div>
+            <button class="composer-input" onclick="openComposer()">Sumar señal al grafo: conocimiento, búsqueda o evidencia...</button>
+          </div>
+          <div class="composer-actions">
+            <button onclick="openComposer('Proyecto')">Proyecto</button>
+            <button onclick="openComposer('Credencial')">Evidencia</button>
+            <button onclick="openComposer('Mentoría')">Acompañamiento</button>
+          </div>
+        </div>
+        <div class="card" style="margin-bottom:10px">
+          <div class="card-top"><h4>Generador de grafo desde CV</h4><span class="badge blue">IA</span></div>
+          <p>Subí un CV o pegá tu trayectoria. La IA extrae conocimientos, aprendizajes buscados e intereses, arma un grafo y después busca vínculos útiles con otros grafos.</p>
+          <div class="cv-upload-box"><input type="file" id="cvFile" accept=".txt,.md,.csv,.pdf,.doc,.docx" onchange="handleCvFile(this.files[0])"><button class="btn secondary" onclick="document.getElementById('cvFile').click()">Subir CV</button><span id="cvFileName">También podés pegar tu CV o trayectoria abajo.</span></div><textarea id="cv" style="width:100%;min-height:96px;margin-top:10px;border:1px solid var(--line);border-radius:var(--r);padding:10px;resize:vertical;background:var(--soft);color:var(--ink)" placeholder="Pegá tu CV, trayectoria, experiencias, conocimientos, aprendizajes buscados e intereses..." oninput="if(!this.value.trim())reiniciarVistaPrevia()"></textarea>
+          <p class="cv-nota">Antes de enviar algo al modelo te mostramos una copia: le sacamos tu nombre, correo, teléfonos, documentos, direcciones y enlaces. Es <strong>seudonimización, no anonimización</strong>: empleos, fechas o lugares pueden identificarte, así que borrá lo que no quieras compartir. El archivo no se guarda.</p>
+          <p class="cv-revision-nota" id="cvRevision" hidden></p>
+          <div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap">
+            <button class="btn" id="buildBtn" onclick="buildProfile()">Revisar y generar grafo</button>
+            <button class="btn secondary" onclick="demoProfile()">CV demo</button>
+          </div>
+        </div>
+        <h3 class="section-title signal-title">Bitácora de señales</h3>
+        <div class="filter-bar signal-filters">
+          <button class="fpill active" onclick="filterFeed('all',this)">Todas</button>
+          <button class="fpill" onclick="filterFeed('extension',this)">Territorio</button>
+          <button class="fpill" onclick="filterFeed('aprendizaje',this)">Aprendizaje</button>
+          <button class="fpill" onclick="filterFeed('pasantia',this)">Experiencia</button>
+          <button class="fpill" onclick="filterFeed('mentoria',this)">Acompañamiento</button>
+        </div>
+        <div class="feed" id="mainFeed"><div class="spinner"></div></div>
+      </div>
+
+      <!-- PERFIL -->
+      <div id="perfil" class="tabs">
+        <div class="profile-hero">
+          <div class="profile-hero-cover"></div>
+          <div class="profile-hero-body">
+            <div class="profile-photo-lg" id="heroAvatar">?</div>
+            <div>
+              <h2 id="heroName">…</h2>
+              <p id="heroSummary" style="color:var(--muted);font-size:13px">Completá el copiloto para mapear qué aportás y qué querés aprender.</p>
+              <div class="chips" id="heroTags"></div>
+            </div>
+            <button class="btn" onclick="openEditProfile()">Editar perfil</button>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="card"><div class="card-top"><h4>Bio</h4><span class="badge green">Verificable</span></div><p id="heroBio" style="color:var(--muted);font-size:13px">Sin descripción todavía. Editá tus datos base para agregar contexto.</p></div>
+          <div class="card"><div class="card-top"><h4>Institución</h4><span class="badge blue">Académico</span></div><p id="heroInst" style="color:var(--muted);font-size:13px">—</p></div>
+        </div>
+        <div class="card recursos-mios" id="misRecursos">
+          <div class="card-top"><h4>Pongo a disposición</h4><span class="badge blue">Recursos</span></div>
+          <p class="rec-nota">Lo que la red puede aprovechar aunque no sepas para qué: una persona que quiere colaborar, datos, un laboratorio, un espacio, tiempo o una habilidad. Si ofrecés a otra persona, describila sin su nombre ni sus datos hasta que acepte. Un acceso a medios o a espacios de gestión se publica con su propósito, nunca con el nombre del contacto: lo presentás vos, solo si las dos partes aceptan.</p>
+          <div id="misRecursosLista"><div class="spinner"></div></div>
+          <div class="recurso-form">
+            <div class="recurso-fila">
+              <select id="recTipo" aria-label="Tipo de recurso"></select>
+              <input id="recTitulo" type="text" maxlength="140" placeholder="Qué ponés a disposición (por ejemplo: una colega que trabaja IA y quiere colaborar)">
+            </div>
+            <input id="recTemas" type="text" placeholder="Temas, separados por comas">
+            <textarea id="recDetalle" maxlength="500" placeholder="Detalle: qué incluye, para quién puede servir"></textarea>
+            <input id="recCondiciones" type="text" maxlength="140" placeholder="Condiciones (por ejemplo: virtual, sin costo, dos tardes por semana)">
+            <label id="recAceptoFila" hidden><input type="checkbox" id="recAcepto"> La persona ofrecida aceptó que se publique su descripción.</label>
+            <button class="btn" onclick="agregarRecurso()">Agregar recurso</button>
+          </div>
+        </div>
+        <div class="card mis-datos" id="misDatos">
+          <div class="card-top"><h4>Mis datos y privacidad</h4><span class="badge" id="misDatosAviso">Aviso</span></div>
+          <p style="color:var(--muted);font-size:13px">Podés corregir tu perfil con «Editar perfil». Para pedir una copia de lo que Rizoma guarda de vos o la baja de tu cuenta, dejá el pedido acá: lo atiende una persona, que puede verificar tu identidad. También podés escribir al correo del <a href="/privacidad" target="_blank" rel="noopener">aviso de privacidad</a>.</p>
+          <div class="mis-datos-acciones">
+            <a class="btn secondary" href="/privacidad" target="_blank" rel="noopener">Ver el aviso</a>
+            <button class="btn secondary" onclick="pedirPrivacidad('acceso')">Pedir una copia de mis datos</button>
+            <button class="btn secondary" onclick="pedirPrivacidad('supresion')">Pedir la baja de mi cuenta</button>
+          </div>
+          <div id="misSolicitudes" style="margin-top:10px"></div>
+          <div class="visibilidad" id="visibilidadPanel">
+            <h5>Qué ven los demás de mí</h5>
+            <label class="vis-fila"><span>Mi nombre</span>
+              <select id="visNombre" onchange="guardarVisibilidad({nombre:this.value})">
+                <option value="abreviado">Inicial y apellido</option>
+                <option value="completo">Nombre completo</option>
+              </select>
+            </label>
+            <p class="vis-vista">Te ven como: <strong id="visComoTeVen">—</strong></p>
+            <label class="vis-fila"><span>Mi bio y resumen</span>
+              <select id="visBio" onchange="guardarVisibilidad({bio:this.value})">
+                <option value="conjunto">Las personas de mi red</option>
+                <option value="nadie">Nadie</option>
+              </select>
+            </label>
+            <label class="vis-check"><input type="checkbox" id="visSugerencias" onchange="guardarVisibilidad({sugerencias:this.checked})"> Aparecer en las sugerencias de otras personas</label>
+            <label class="vis-check"><input type="checkbox" id="visBusqueda" onchange="guardarVisibilidad({busqueda:this.checked})"> Aparecer en la búsqueda</label>
+            <label class="vis-check"><input type="checkbox" id="visInstitucion" onchange="guardarVisibilidad({institucion:this.checked})"> Mostrar mi institución</label>
+            <p class="vis-nota">Vos y la administración ven siempre tu perfil completo. Si no aparecés en sugerencias, cuando hacés de puente se te muestra como «Persona de la red». Si te postulás a un proyecto, quien lo revisa ve tu nombre completo y tu correo para poder certificarte. Las organizaciones se muestran con su nombre.</p>
+          </div>
+        </div>
+        <h3 class="section-title" style="margin-top:14px">Experiencias y credenciales</h3>
+        <div class="feed" id="profileCredsFeed"><p style="color:var(--muted);font-size:13px">Todavía no hay evidencias validadas. Primero vinculá tu grafo con otras personas o proyectos.</p></div>
+      </div>
+
+      <!-- VER TU RIZOMA -->
+      <div id="rizoma" class="tabs">
+        <div id="rizomaView" class="rizoma-view">
+          <div class="card">
+            <div class="card-top"><h4>Grafo generado desde CV</h4><span class="badge blue">Mapa vivo</span></div>
+            <p>Subí tu CV para que Rizoma construya un grafo de conocimientos y lo vincule con otros grafos mediante inteligencia artificial.</p>
+            <button class="btn" style="margin-top:10px" onclick="showTab('inicio',document.querySelector('[data-nav=inicio]'));setTimeout(()=>document.getElementById('cv').focus(),200)">Subir CV y generar grafo</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECURSOS -->
+      <div id="recursos" class="tabs">
+        <section class="card rec-bloque">
+          <div class="card-top"><h4>Recursos que la red pone en común</h4><span class="badge blue">Pongo a disposición</span></div>
+          <p class="rec-nota">Además de lo que sabe y lo que quiere aprender, cada persona cuenta con qué recursos cuenta: una persona que quiere colaborar, datos, un laboratorio, un espacio, tiempo. Quien ofrece no necesita saber para qué servirá; quien lo necesita lo reconoce y avisa «me sirve, para…». Los tuyos se suman en <a href="#" onclick="showTab('perfil',document.querySelector('[data-nav=perfil]'));setTimeout(()=>document.getElementById('misRecursos')?.scrollIntoView({behavior:'smooth'}),150);return false">Datos base</a>.</p>
+          <div id="recSeguimiento"></div>
+          <h5 class="rec-sub">Para vos</h5>
+          <div id="recParaMi"><div class="spinner"></div></div>
+          <h5 class="rec-sub">Todo lo que la red pone a disposición</h5>
+          <div class="rec-filtros" id="recFiltros"></div>
+          <div id="recRed"><div class="spinner"></div></div>
+        </section>
+      </div>
+
+      <!-- PROYECTOS -->
+      <div id="proyectos" class="tabs">
+        <div class="feed" id="projectsFeed"><div class="spinner"></div></div>
+      </div>
+
+      <!-- CREDENCIALES -->
+      <div id="credenciales" class="tabs">
+        <div id="credsFeed" class="feed"><div class="spinner"></div></div>
+      </div>
+
+      <!-- MATCHES IA -->
+      <div id="matches" class="tabs">
+        <div class="algo-box">
+          <div class="card-top"><h4>Cómo se vinculan los grafos</h4><span class="badge blue">Grafo + IA</span></div>
+          <div class="algo-row"><span class="algo-icon">🔍</span><span><strong>Rizoma propio</strong> — ordenamos conocimientos, aprendizajes buscados e intereses</span></div>
+          <div class="algo-row"><span class="algo-icon">🧩</span><span><strong>Vínculo con otros grafos</strong> — cruzamos lo que sabés con lo que otras personas buscan, y al revés</span></div>
+          <div class="algo-row"><span class="algo-icon">📈</span><span><strong>Orden del grafo</strong> — las sugerencias se ordenan por rareza de los temas, cruces entre áreas o al azar, y cada una muestra el dato que la ubica</span></div>
+          <div class="algo-row"><span class="algo-icon">🔒</span><span><strong>Revisión humana</strong> — la IA solo redacta la explicación de cada sugerencia; las personas deciden conversar</span></div>
+        </div>
+        <div class="feed" id="notificationsFeed"></div>
+        <div class="feed" id="matchesFeed">
+          <div class="card">
+            <div class="card-top"><h4>Vinculación de grafos</h4><span class="badge blue">IA</span></div>
+            <p>Generá primero tu grafo. Luego la IA lo cruza con otros grafos para encontrar complementariedades posibles.</p>
+            <button class="btn" style="margin-top:10px" onclick="showTab('inicio',document.querySelector('[data-nav=inicio]'));setTimeout(()=>document.getElementById('cv').focus(),200)">Subir CV y generar grafo →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OBSERVATORIO -->
+      <div id="observatorio" class="tabs">
+        <div class="head" style="margin-bottom:16px">
+          <span class="panel-kicker">Institucional</span>
+          <h3>Observatorio de actividades emergentes</h3>
+          <p>Qué pasó con las conexiones que sugirió la IA, mes a mes: cuántas se marcaron como útiles, cuántas no, y cuántas terminaron en colaboración real.</p>
+        </div>
+        <div class="head" style="margin-bottom:8px">
+          <h4>Actividades emergentes detectadas en el grafo</h4>
+          <p style="font-size:13px">Combinaciones de temas de áreas distintas que nadie reúne todavía y para las que hay oferta y demanda cruzadas. Son hipótesis para conversar: decinos si te parecen útiles.</p>
+        </div>
+        <div id="actividadesBody" class="feed" style="margin-bottom:24px"></div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>Demanda formativa latente</h4>
+          <p style="font-size:13px">Temas que más gente quiere aprender que personas que los ofrecen: ahí un curso o una clínica tendría público.</p>
+        </div>
+        <div id="demandaBody" class="feed" style="margin-bottom:24px"></div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>Puentes estructurales</h4>
+          <p style="font-size:13px">Personas y temas cuya ausencia desconectaría áreas de la red: el porcentaje es la fracción de vínculos a tres saltos o menos que se perdería.</p>
+        </div>
+        <div id="puentesBody" class="feed" style="margin-bottom:24px"></div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>Preguntale a la red</h4>
+          <p style="font-size:13px">Por ejemplo: «¿quién podría ayudarme a visualizar datos de salud?». La respuesta usa solo lo que muestra el grafo.</p>
+        </div>
+        <div class="card" style="margin-bottom:24px">
+          <div class="form-group"><input type="text" id="preguntaInput" maxlength="400" placeholder="Escribí tu pregunta"></div>
+          <button class="btn" onclick="preguntarRed()">Preguntar</button>
+          <div id="preguntaOut" style="margin-top:12px"></div>
+        </div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>¿Y si se suma alguien? (simulador)</h4>
+          <p style="font-size:13px">Probá una persona hipotética y mirá qué conexiones y actividades cambian. No se guarda nada.</p>
+        </div>
+        <div class="card" style="margin-bottom:24px">
+          <div class="form-group"><label>Qué puede aportar (separado por comas)</label><input type="text" id="simOfrece" placeholder="visualizacion de datos, cuidado"></div>
+          <div class="form-group"><label>Qué quiere aprender</label><input type="text" id="simQuiere" placeholder="economia circular"></div>
+          <div class="form-group"><label>Intereses</label><input type="text" id="simIntereses" placeholder="salud"></div>
+          <button class="btn" onclick="simularRed()">Simular</button>
+          <div id="simOut" style="margin-top:12px"></div>
+        </div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>Evaluación a ciegas</h4>
+          <p style="font-size:13px">Te mostramos dos perfiles sin decirte cómo se eligieron. Calificá qué tan útil sería que conversen. Es la única forma independiente de saber si las conexiones del grafo valen la pena.</p>
+        </div>
+        <div class="card" style="margin-bottom:24px">
+          <div id="evalBody"><button class="btn" onclick="cargarEvaluacion()">Evaluar un par</button></div>
+          <div id="evalResumen" style="margin-top:12px"></div>
+        </div>
+
+        <div class="head" style="margin-bottom:8px">
+          <h4>Triangulación de modelos</h4>
+          <p style="font-size:13px">Qué tan seguido dice «sí hay complementariedad» cada votante, según el tipo de par. Si dice «sí» igual con pares al azar, su veredicto no discrimina.</p>
+        </div>
+        <div id="triangBody" class="feed" style="margin-bottom:24px"></div>
+        <div id="observatorioBody">
+          <p style="color:var(--muted);font-size:13px">Cargando…</p>
+        </div>
+      </div>
+
+      <!-- MANUAL -->
+      <div id="manual" class="tabs">
+        <div class="manual-hero">
+          <span class="eyebrow">Guía de operación</span>
+          <h2>Subí tu CV. Generá un grafo. Vinculalo con el resto.</h2>
+          <p>La lógica de Rizoma es simple: primero subís un CV o trayectoria; después la inteligencia artificial construye un grafo de conocimientos, aprendizajes e intereses y lo vincula con otros grafos para detectar dónde puede producirse una complementariedad útil.</p>
+        </div>
+
+        <section class="manual-section institutional-origin">
+          <h3>Origen institucional</h3>
+          <p>Rizoma es un producto desarrollado desde <strong>Open Lab</strong>, con <strong>Maximiliano Perez</strong>. Su propósito es acompañar trayectorias, oportunidades, aprendizajes y credenciales verificables en clave de inclusión laboral.</p>
+        </section>
+
+        <div class="manual-grid">
+          <article class="manual-card">
+            <span class="manual-num">1</span>
+            <h4>Generar el grafo propio</h4>
+            <p>Subí o pegá tu CV/trayectoria para extraer conocimientos, aprendizajes buscados e intereses.</p>
+          </article>
+          <article class="manual-card">
+            <span class="manual-num">2</span>
+            <h4>Conectar con IA</h4>
+            <p>La IA cruza tu grafo con otros grafos para sugerir personas, conversaciones y proyectos posibles.</p>
+          </article>
+          <article class="manual-card">
+            <span class="manual-num">3</span>
+            <h4>Pasar de conexión a proyecto</h4>
+            <p>Revisá dónde una conexión puede convertirse en colaboración, aprendizaje verificable o experiencia validada.</p>
+          </article>
+          <article class="manual-card">
+            <span class="manual-num">4</span>
+            <h4>Construir evidencia</h4>
+            <p>Primero se manifiesta interés y se abre conversación. La credencial llega después, si la experiencia efectivamente ocurre y se valida.</p>
+          </article>
+        </div>
+
+        <section class="manual-section">
+          <h3>Para qué sirve la IA</h3>
+          <div class="manual-list">
+            <div><strong>Generar tu grafo</strong><span>Convierte un CV o trayectoria en nodos de conocimiento, aprendizaje e interés.</span></div>
+            <div><strong>Vincular con otros grafos</strong><span>Busca personas con complementariedad posible, no perfiles “mejores”.</span></div>
+            <div><strong>Conectar con proyectos</strong><span>Ubica espacios donde esas conexiones pueden tomar forma.</span></div>
+            <div><strong>Explicar cada conexión</strong><span>La IA debe mostrar qué podés aprender, qué podés aportar y por qué vale conversar.</span></div>
+          </div>
+        </section>
+
+        <section class="manual-section">
+          <h3>Flujos principales</h3>
+          <div class="manual-flow">
+            <div><span>Estudiante</span><p>Subir CV y generar grafo → vincularlo con otros grafos mediante IA → conversar → llevar la conexión a proyecto o experiencia.</p></div>
+            <div><span>Docente u organización</span><p>Declarar necesidades y aprendizajes posibles → encontrar grafos compatibles → conversar → validar experiencias.</p></div>
+            <div><span>Administrador</span><p>Cuidar calidad → revisar publicaciones → controlar seguridad → sostener criterios institucionales.</p></div>
+          </div>
+        </section>
+
+        <section class="manual-section">
+          <h3>Buenas prácticas</h3>
+          <div class="manual-do-dont">
+            <div>
+              <h4>Hacer</h4>
+              <ul>
+                <li>Describir aprendizajes, roles y entregables concretos.</li>
+                <li>Explorar proyectos con interés real y propuesta concreta.</li>
+                <li>Usar la IA para ordenar, no para inventar.</li>
+                <li>Pedir criterios claros de validación.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Evitar</h4>
+              <ul>
+                <li>Frases genéricas sin evidencia.</li>
+                <li>Contactos masivos sin leer qué necesita el proyecto.</li>
+                <li>Inflar experiencia o credenciales.</li>
+                <li>Confundir conversación inicial con validación final.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- MENSAJES -->
+      <div id="mensajes" class="tabs">
+        <div class="feed" id="msgsFeed"><div class="spinner"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RIGHT SIDEBAR -->
+  <aside class="panel connection-panel">
+    <div class="head"><span class="panel-kicker">Puentes</span><h3>Conexiones vivas</h3><p>Personas, proyectos y evidencias que emergen del grafo.</p></div>
+    <div class="body">
+      <div class="inst-card">
+        <div class="inst-banner">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,.8)" stroke-width="1.5"><path d="M12 3L2 9l10 6 10-6-10-6zM2 17l10 6 10-6M2 13l10 6 10-6"/></svg>
+          <div><strong>Rizoma</strong><span style="display:block">Rizomas conectados con IA</span></div>
+        </div>
+        <div class="inst-body">
+          <p class="origin-copy">Open Lab, con Maximiliano Perez.</p>
+          <div class="inst-stats">
+            <div class="inst-stat"><strong id="statProjects">—</strong><span>Proyectos</span></div>
+            <div class="inst-stat"><strong id="statUsers">—</strong><span>Usuarios</span></div>
+            <div class="inst-stat"><strong id="statCreds">—</strong><span>Credenciales</span></div>
+          </div>
+        </div>
+      </div>
+      <div id="aiProfile" class="card" style="margin-bottom:10px">
+        <div class="card-top"><h4>Generador de grafo</h4><span class="badge">IA</span></div>
+        <p>Subí un CV o pegá información para que la IA arme tu grafo y lo vincule con otros grafos.</p>
+      </div>
+      <h3 class="section-title">Conexiones sugeridas</h3>
+      <div class="feed" id="matchesList"></div>
+    </div>
+  </aside>
+</main>
+
+<footer style="padding:0 22px 24px;color:var(--muted);font-size:12px">
+  Rizoma · Producto de Open Lab, con Maximiliano Perez.
+</footer>
+
+<script src="static/js/app.js?v=20261025-recursos"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+

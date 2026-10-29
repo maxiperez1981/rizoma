@@ -1,0 +1,10 @@
+[Unit]
+Description=Chequeo semanal de embeddings de Rizoma
+
+[Timer]
+OnCalendar=Mon 04:00
+Persistent=true
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,1215 @@
+{
+ "resumen": {
+  "personas": 16,
+  "media": 14.62,
+  "min": 13,
+  "max": 15
+ },
+ "parametros": {
+  "orden": "cruces"
+ },
+ "por_persona": {
+  "demo.vivo.carla@rizoma.local": [
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 2 áreas a través de 4 temas puente"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Conecta 1 área a través de 4 temas puente"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.cooperativa@rizoma.local": [
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.diego@rizoma.local": [
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Conecta 2 áreas a través de 4 temas puente"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Conecta 2 áreas a través de 1 tema en común"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Conecta 1 área a través de 3 temas puente"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.ezequiel@rizoma.local": [
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 1 área a través de 3 temas puente"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.gustavo@rizoma.local": [
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.hospital@rizoma.local": [
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 2 áreas a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.julian@rizoma.local": [
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.lucia@rizoma.local": [
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Conecta 1 área a través de 5 temas puente"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.marta@rizoma.local": [
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.martin@rizoma.local": [
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Conecta 1 área a través de 3 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.nahuel@rizoma.local": [
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Conecta 2 áreas a través de 1 tema en común"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Conecta 1 área a través de 5 temas puente"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.paula@rizoma.local": [
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Conecta 2 áreas a través de 3 temas puente"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 2 áreas a través de 1 tema en común"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.rocio@rizoma.local": [
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Conecta 2 áreas a través de 2 temas puente"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Conecta 1 área a través de 4 temas puente"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.sabrina@rizoma.local": [
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Conecta 1 área a través de 5 temas puente"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Conecta 1 área a través de 1 tema en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.tomas@rizoma.local": [
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Conecta 1 área a través de 5 temas puente"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "912734d5-c99c-4a86-a92d-8f071b137cbd",
+    "nombre": "Valeria Romero",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ],
+  "demo.vivo.valeria@rizoma.local": [
+   {
+    "id": "93c2c5cd-47ba-4b3b-935b-7dd6fca2b83c",
+    "nombre": "Julián Medina",
+    "dato": "Conecta 1 área a través de 2 temas en común"
+   },
+   {
+    "id": "d949a314-812b-4608-a0a1-e0cc86b6d64c",
+    "nombre": "Carla Ibáñez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a84c2570-da27-4fec-9990-2c35edd958b8",
+    "nombre": "Cooperativa Reciclar Quilmes",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "c910008c-0a26-4f73-ac3b-a669f1c576e4",
+    "nombre": "Diego Ferreyra",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7529c328-1ea1-47f7-853a-1b8a749fc76e",
+    "nombre": "Ezequiel Luna",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "7ad14772-6af9-448c-bc0b-a8572b759d91",
+    "nombre": "Hospital Zonal Sur",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "aac32c31-1c00-41c6-91e5-d9fddc760874",
+    "nombre": "Lucía Paz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "eaea2b72-dbba-4fc5-af9e-fa70e476ee48",
+    "nombre": "Martín Sosa",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "e770df91-d8a9-42d8-825f-cbfb58ac2fdd",
+    "nombre": "Nahuel Ortiz",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "484bd028-b590-4de9-a2a2-5ec2999fde33",
+    "nombre": "Paula Benítez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "8c50dbf3-8865-452f-8b30-ec1edf79121b",
+    "nombre": "Prof. Gustavo Herrera",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "5d93c2a2-51a7-4f2a-a83b-1592aa8b3003",
+    "nombre": "Prof. Marta Quiroga",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "d5b834cf-be9b-43f5-b225-614dfbd9f8bb",
+    "nombre": "Rocío Álvarez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "a87032ff-0494-4388-9676-709286f2a34a",
+    "nombre": "Sabrina Gómez",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   },
+   {
+    "id": "b890465b-3db6-4a88-89b6-c1d3057a2ca7",
+    "nombre": "Tomás Rivas",
+    "dato": "Sin camino en el grafo: aparece solo por afinidad de perfiles; va al final"
+   }
+  ]
+ }
+}

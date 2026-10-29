@@ -1,0 +1,9 @@
+[Unit]
+Description=Regenera embeddings de Rizoma desactualizados
+After=network-online.target postgresql.service
+
+[Service]
+Type=oneshot
+User=almaapp
+WorkingDirectory=/home/alma-academica
+ExecStart=/usr/bin/python3 /home/alma-academica/check_embeddings.py --fix

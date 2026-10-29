@@ -1,0 +1,70 @@
+(fusion semantica de temas: no)
+== Estructura ==
+personas=50 temas=258 aristas=383 temas/persona=7.7
+temas compartidos (>=2 personas)=80 (31.0%), de una sola persona=178 (69.0%)
+  a 1 saltos: 13.1% de los pares (acumulado 13.1%)
+  a 2 saltos: 33.0% de los pares (acumulado 46.0%)
+  a 3 saltos: 36.9% de los pares (acumulado 82.9%)
+  a 4 saltos: 15.3% de los pares (acumulado 98.2%)
+  a 5 saltos: 1.7% de los pares (acumulado 99.9%)
+  a 6 saltos: 0.1% de los pares (acumulado 100.0%)
+
+== Comparacion con similitud semantica ==
+candidatos indirectos por persona: media 16.2 (min 1, max 29)
+coincidencia indirectos top5 vs similitud top5: 8.8%; vs top10: 23.7%
+posicion media de los indirectos en el ranking por similitud: 22.3 de 49
+rareza media del camino: top5 2.99 vs todos 2.73
+los 5 mas similares comparten al menos un tema: 52.8%
+
+== Estabilidad de las actividades emergentes ==
+areas por semilla: 6-7 (mediana 7.0), 30 semillas
+solapamiento medio de una corrida simple con el consenso: 85% (min 50%)
+  cuidado + visualizacion de datos: estabilidad en el sistema 1.00; aparece en 30/30 semillas sueltas
+  programacion + sensores: estabilidad en el sistema 1.00; aparece en 30/30 semillas sueltas
+  IA aplicada + talleres: estabilidad en el sistema 1.00; aparece en 30/30 semillas sueltas
+  comercio exterior + modelo de negocio: estabilidad en el sistema 1.00; aparece en 30/30 semillas sueltas
+  accesibilidad + bases de datos: estabilidad en el sistema 0.75; aparece en 21/30 semillas sueltas
+  analisis genomico + automatizacion liviana: estabilidad en el sistema 0.75; aparece en 21/30 semillas sueltas
+  calidad alimentaria + produccion digital: estabilidad en el sistema 0.75; aparece en 21/30 semillas sueltas
+  logistica + periodismo cientifico: estabilidad en el sistema 0.75; aparece en 21/30 semillas sueltas
+
+== Actividades, demanda latente y puentes ==
+actividades emergentes (consenso de 12 semillas):
+  cuidado + visualizacion de datos | personas=8 demanda=3 oferta=3 estabilidad=1.00
+    areas: salud / cuidado / accesibilidad  <>  IA y empleo / empleo / bases de datos
+  sensores + programacion | personas=6 demanda=3 oferta=3 estabilidad=1.00
+    areas: trabajo / memoria / produccion digital  <>  IA y empleo / empleo / bases de datos
+  talleres + IA aplicada | personas=5 demanda=3 oferta=2 estabilidad=1.00
+    areas: IA y empleo / empleo / bases de datos  <>  IA aplicada / pymes / gestion
+  modelo de negocio + comercio exterior | personas=5 demanda=2 oferta=2 estabilidad=1.00
+    areas: IA aplicada / pymes / gestion  <>  calidad alimentaria / comercio exterior / logistica
+  bases de datos + accesibilidad | personas=7 demanda=3 oferta=3 estabilidad=0.75
+    areas: IA y empleo / empleo / bases de datos  <>  salud / cuidado / accesibilidad
+  automatizacion liviana + analisis genomico | personas=6 demanda=3 oferta=3 estabilidad=0.75
+    areas: trabajo / memoria / produccion digital  <>  salud / cuidado / accesibilidad
+  produccion digital + calidad alimentaria | personas=6 demanda=3 oferta=3 estabilidad=0.75
+    areas: trabajo / memoria / produccion digital  <>  calidad alimentaria / comercio exterior / logistica
+  logistica + periodismo cientifico | personas=5 demanda=3 oferta=2 estabilidad=0.75
+    areas: calidad alimentaria / comercio exterior / logistica  <>  IA y empleo / empleo / bases de datos
+demanda formativa latente:
+  IA aplicada | quieren=3 ofrecen=0 areas=1
+  periodismo cientifico | quieren=3 ofrecen=0 areas=2
+  trazabilidad digital | quieren=2 ofrecen=0 areas=1
+  derechos digitales | quieren=2 ofrecen=0 areas=1
+  tecnologias accesibles | quieren=2 ofrecen=0 areas=1
+  auditoria algoritmica | quieren=2 ofrecen=0 areas=1
+  comunicacion de riesgo | quieren=2 ofrecen=0 areas=1
+  sesgos | quieren=2 ofrecen=0 areas=1
+puentes estructurales (alcance base a 3 saltos: 82.9%):
+  tema territorio | perdida=18.5% personas=7 areas=5
+  tema calidad alimentaria | perdida=7.5% personas=3 areas=1
+  tema accesibilidad | perdida=7.3% personas=4 areas=1
+  tema cooperativas | perdida=5.9% personas=3 areas=1
+  tema trabajo | perdida=5.0% personas=6 areas=2
+  tema salud | perdida=4.7% personas=5 areas=1
+  persona 1 | perdida=11.1% articulacion=False areas_que_conecta=3
+  persona 2 | perdida=7.6% articulacion=False areas_que_conecta=3
+  persona 3 | perdida=7.5% articulacion=True areas_que_conecta=3
+  persona 4 | perdida=7.4% articulacion=True areas_que_conecta=3
+  persona 5 | perdida=3.8% articulacion=False areas_que_conecta=3
+  persona 6 | perdida=2.9% articulacion=False areas_que_conecta=3

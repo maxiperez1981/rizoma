@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qué es Rizoma y para qué puede servir: una red que conecta personas por lo que saben, lo que quieren aprender y lo que les interesa, aunque el vínculo pase por otra persona. Una aplicación de Open Lab, UNQ.">
+  <title>Rizoma · Qué es y para qué puede servir</title>
+  <link rel="icon" href="/static/favicon.svg?v=20260808-curves" type="image/svg+xml">
+  <link rel="stylesheet" href="/static/css/fonts.css?v=20261018-fuentes">
+  <style>
+    :root {
+      --bg:#f6f4f1; --panel:#fff; --soft:#faf7f4; --ink:#1b1b1b; --muted:#5d5d5d; --line:#e5e1dc;
+      --primary:#c8102e; --primary-soft:#fbeef0; --blue:#005a9c;
+      --display:"Montserrat", system-ui, sans-serif; --body:"Source Sans 3", system-ui, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#0e0e0e; --panel:#1a1a1a; --soft:#212121; --ink:#ececec; --muted:#a4a4a4; --line:#2e2e2e;
+              --primary:#ff6b7d; --primary-soft:#2a1216; --blue:#7ab8e8; }
+      .captura img { filter: brightness(.92); }
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:var(--body); font-size:18px; line-height:1.6; color:var(--ink); background:var(--bg); }
+    a { color:var(--primary); font-weight:600; }
+    .franja { height:6px; background:#c8102e; }
+    header.top { max-width:1080px; margin:0 auto; padding:18px 20px; display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .marca { font-family:var(--display); font-weight:800; font-size:20px; color:var(--ink); text-decoration:none; }
+    .boton { display:inline-block; font-family:var(--display); font-weight:700; font-size:15px; text-decoration:none;
+             padding:10px 20px; border-radius:999px; background:#c8102e; color:#fff; }
+    .boton.sec { background:transparent; color:var(--ink); border:1.5px solid var(--line); }
+    main { max-width:1080px; margin:0 auto; padding:0 20px 64px; }
+    html { scroll-behavior:smooth; }
+    section, .opcion { scroll-margin-top:64px; }
+    .hero { padding:48px 0 40px; display:grid; grid-template-columns:minmax(0, 1fr) minmax(0, 1.05fr); gap:36px; align-items:center; }
+    .video { margin:0; }
+    .video-marco { position:relative; border-radius:12px; overflow:hidden; background:#141416; box-shadow:0 14px 34px rgba(0,0,0,.18); aspect-ratio:16/9; }
+    .video-marco img, .video-marco iframe { position:absolute; inset:0; width:100%; height:100%; border:0; display:block; object-fit:cover; }
+    .video-play { position:absolute; left:50%; bottom:22px; transform:translateX(-50%); display:flex; align-items:center; gap:10px; border:0; cursor:pointer;
+                  font-family:var(--display); font-weight:700; font-size:16px; padding:12px 22px; border-radius:999px; background:#c8102e; color:#fff; box-shadow:0 6px 18px rgba(0,0,0,.35); }
+    .video-play:hover, .video-play:focus-visible { background:#9f0f28; outline:3px solid #fff; outline-offset:2px; }
+    .video-play-icono { font-size:14px; }
+    .video-play { white-space:nowrap; }
+    .video figcaption { display:grid; gap:6px; }
+    .video-aviso { font-size:14px; line-height:1.45; }
+    .video-recordar { font-size:14px; display:flex; gap:8px; align-items:center; }
+    .privacidad-pagina { font-size:15px; color:var(--muted); }
+    .privacidad-pagina ul { padding-left:20px; margin:8px 0; }
+    .boton-texto { border:0; background:none; padding:0; color:var(--primary); font:inherit; font-weight:600; text-decoration:underline; cursor:pointer; }
+    .video figcaption { font-size:15px; color:var(--muted); margin-top:8px; }
+    .indice { position:sticky; top:0; z-index:5; display:flex; gap:6px; flex-wrap:wrap; padding:10px 0; background:var(--bg); border-bottom:1px solid var(--line); }
+    .indice a { font-family:var(--display); font-weight:700; font-size:14px; text-decoration:none; color:var(--ink); padding:6px 12px; border-radius:999px; border:1px solid var(--line); background:var(--panel); }
+    .indice a:hover { border-color:var(--primary); color:var(--primary); }
+    .menu a { display:flex; align-items:center; gap:14px; color:inherit; text-decoration:none; width:100%; }
+    .menu li:hover { border-color:var(--primary); }
+    .recursos-fig { display:grid; grid-template-columns:minmax(0, 2.6fr) minmax(0, 1fr); gap:18px; align-items:start; }
+    .seccion-rot { font-family:var(--display); font-weight:700; font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--primary); margin:0 0 8px; }
+    h1 { font-family:var(--display); font-weight:800; font-size:clamp(34px, 6vw, 56px); line-height:1.05; margin:0 0 18px; max-width:820px; }
+    h2 { font-family:var(--display); font-weight:800; font-size:clamp(26px, 4vw, 36px); line-height:1.12; margin:0 0 14px; }
+    h3 { font-family:var(--display); font-weight:700; font-size:20px; line-height:1.25; margin:0 0 6px; }
+    .bajada { font-size:21px; color:var(--muted); max-width:760px; margin:0 0 26px; }
+    .acciones { display:flex; flex-wrap:wrap; gap:12px; }
+    .aviso { font-size:15px; color:var(--muted); margin-top:18px; }
+    section { padding:44px 0; border-top:1px solid var(--line); }
+    .pasos { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; margin-top:22px; }
+    .paso, .tarjeta { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:22px; }
+    .paso .n { font-family:var(--display); font-weight:800; color:var(--primary); font-size:14px; letter-spacing:.08em; }
+    .paso p, .tarjeta p { margin:6px 0 0; color:var(--muted); }
+    .captura { margin:22px 0 0; }
+    .captura img { width:100%; height:auto; display:block; border-radius:10px; border:1px solid var(--line); box-shadow:0 10px 26px rgba(0,0,0,.08); background:#fff; }
+    .captura figcaption { font-size:15px; color:var(--muted); margin-top:8px; }
+    .dos { display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:start; }
+    .principios { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; margin-top:22px; }
+    .comparacion { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:22px; }
+    .comparacion .col { border-radius:12px; padding:24px; background:var(--panel); border:1px solid var(--line); }
+    .comparacion .col.rz { border:2px solid var(--primary); background:var(--primary-soft); }
+    .comparacion ul { margin:10px 0 0; padding-left:20px; }
+    .comparacion li { margin:6px 0; }
+    .menu { list-style:none; padding:0; margin:22px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .menu li { display:flex; align-items:center; gap:14px; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 18px; font-family:var(--display); font-weight:700; }
+    .num { flex:none; width:40px; height:40px; border-radius:50%; background:#c8102e; color:#fff; display:grid; place-items:center; font-family:var(--display); font-weight:800; font-size:18px; }
+    .opcion { margin-top:34px; }
+    .opcion .cab { display:flex; align-items:center; gap:14px; margin-bottom:6px; }
+    .opcion .cab h3 { margin:0; font-size:24px; }
+    .opcion p { color:var(--muted); max-width:820px; margin:6px 0 0; }
+    .nota { background:var(--soft); border-left:4px solid var(--primary); padding:14px 18px; border-radius:8px; margin-top:20px; }
+    .medidas { margin:14px 0 0; padding-left:20px; }
+    .medidas li { margin:6px 0; }
+    footer { max-width:1080px; margin:0 auto; padding:28px 20px 48px; border-top:1px solid var(--line); color:var(--muted); font-size:15px; }
+    @media (max-width: 760px) {
+      body { font-size:17px; }
+      .pasos, .principios, .comparacion, .dos, .menu, .hero, .recursos-fig { grid-template-columns:1fr; }
+      .indice { flex-wrap:nowrap; overflow-x:auto; }
+      .indice a { flex:none; }
+      .video-play { font-size:14px; padding:8px 16px; bottom:10px; }
+      .hero { padding:28px 0 28px; }
+      section { padding:34px 0; }
+      .bajada { font-size:19px; }
+    }
+  </style>
+</head>
+<body>
+<div class="franja"></div>
+<header class="top">
+  <a class="marca" href="/presentacion">Rizoma</a>
+  <a class="boton" href="/">Ingresar</a>
+</header>
+<main>
+  <div class="hero">
+    <div class="hero-texto">
+      <p class="seccion-rot">Un prototipo para generar redes</p>
+      <h1>Emergen las conexiones</h1>
+      <p class="bajada">Rizoma conecta personas por lo que cada una sabe, lo que quiere aprender y lo que le interesa, aunque el vínculo pase por otra persona. Te muestra con quién conviene conversar y por qué.</p>
+      <div class="acciones">
+        <a class="boton" href="/">Ingresar a Rizoma</a>
+        <a class="boton sec" href="#para-que">Para qué puede servir</a>
+      </div>
+      <p class="aviso">Las pantallas de esta página y del video son de una demostración con perfiles ficticios.</p>
+    </div>
+    <figure class="video">
+      <div class="video-marco" id="videoMarco">
+        <img src="/static/img/presentacion/video-portada.webp" width="1280" height="720" alt="Portada del video «Rizoma: qué es y para qué puede servir»">
+        <button type="button" class="video-play" id="videoPlay" aria-describedby="videoAviso">
+          <span class="video-play-icono" aria-hidden="true">▶</span> Reproducir el video
+        </button>
+      </div>
+      <figcaption>
+        <span>Rizoma en 3 minutos: qué es y para qué puede servir.</span>
+        <span class="video-aviso" id="videoAviso">El video está en YouTube. Al reproducirlo se carga el reproductor de YouTube (Google), que puede guardar información en tu navegador y tratar datos fuera de la Unión Europea, según su <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">política de privacidad</a>. Hasta que no lo actives, esta página no se conecta con YouTube.</span>
+        <label class="video-recordar"><input type="checkbox" id="videoRecordar"> Recordar mi elección en este navegador</label>
+        <a href="https://youtu.be/TYQVg7U9KsE" target="_blank" rel="noopener noreferrer">Verlo directamente en YouTube</a>
+      </figcaption>
+    </figure>
+  </div>
+
+  <nav class="indice" aria-label="Secciones">
+    <a href="#que-es">Qué es</a>
+    <a href="#base-de-datos">Base de datos</a>
+    <a href="#para-que">Para qué sirve</a>
+    <a href="#ia">IA</a>
+    <a href="#privacidad">Privacidad</a>
+    <a href="#medir">Cómo medirlo</a>
+  </nav>
+
+  <section id="que-es">
+    <p class="seccion-rot">¿Qué es Rizoma?</p>
+    <h2>Una red de saberes, no un perfil para exhibir</h2>
+    <div class="pasos">
+      <div class="paso"><div class="n">1 · CARGÁS</div><h3>Tu currículum o tu trayectoria</h3><p>Antes de que la inteligencia artificial lo lea, ves una copia sin tu nombre, tu correo ni tus teléfonos, y la podés corregir.</p></div>
+      <div class="paso"><div class="n">2 · SE ARMA</div><h3>Tu grafo de conocimientos</h3><p>Reúne lo que sabés, lo que querés aprender y lo que te interesa, como temas que se vinculan con los de otras personas.</p></div>
+      <div class="paso"><div class="n">3 · LA RED SUGIERE</div><h3>Con quién conversar</h3><p>Cada sugerencia muestra el dato que la justifica: qué temas comparten o por quién pasa el camino.</p></div>
+    </div>
+    <div class="dos">
+      <figure class="captura"><img src="/static/img/presentacion/grafo.webp" width="961" height="600" alt="Grafo de Carla, con temas que sabe, que quiere aprender y que le interesan" loading="lazy"><figcaption>El grafo de Carla, estudiante de Enfermería: saberes, aprendizajes e intereses.</figcaption></figure>
+      <figure class="captura"><img src="/static/img/presentacion/vista-previa-cv.webp" width="1400" height="697" alt="Vista previa del currículum sin datos personales, lista para revisar" loading="lazy"><figcaption>La copia del currículum que va al modelo, sin datos personales, para revisarla antes.</figcaption></figure>
+    </div>
+
+    <h2 style="margin-top:44px">Cómo ordena las sugerencias</h2>
+    <div class="principios">
+      <div class="tarjeta"><h3>Pesa la rareza, no la cercanía</h3><p>Un tema que declaran dos personas de dieciséis dice mucho más que uno que declaran casi todas.</p></div>
+      <div class="tarjeta"><h3>Complementariedad, no parecido</h3><p>Busca quién ofrece lo que otra persona quiere aprender, y al revés.</p></div>
+      <div class="tarjeta"><h3>Caminos indirectos</h3><p>Los vínculos más valiosos suelen pasar por un tercero: una persona, una organización o un tema puente.</p></div>
+    </div>
+  </section>
+
+  <section id="base-de-datos">
+    <p class="seccion-rot">¿Qué es Rizoma?</p>
+    <h2>¿Por qué no alcanza con una base de datos?</h2>
+    <div class="comparacion">
+      <div class="col">
+        <h3>Una base de datos</h3>
+        <ul>
+          <li>Responde quién trabaja qué.</li>
+          <li>Hay que saber qué buscar.</li>
+          <li>Encuentra palabras iguales.</li>
+          <li>Guarda lo que cada quien sabe.</li>
+          <li>Cada quien figura con lo suyo.</li>
+        </ul>
+      </div>
+      <div class="col rz">
+        <h3>Rizoma</h3>
+        <ul>
+          <li>Dice con quién te conviene hablar, y por qué.</li>
+          <li>Te muestra a quien no sabías que existía.</li>
+          <li>Sigue caminos indirectos por la red.</li>
+          <li>Guarda también lo que cada persona quiere aprender.</li>
+          <li>Pone recursos en común, aunque nadie sepa todavía para qué.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="para-que">
+    <p class="seccion-rot">¿Para qué puede servir?</p>
+    <h2>Cinco posibilidades, y cada una funciona sola</h2>
+    <ol class="menu">
+      <li><a href="#op1"><span class="num">1</span>Con quién conversar</a></li>
+      <li><a href="#op2"><span class="num">2</span>Actividades emergentes</a></li>
+      <li><a href="#op3"><span class="num">3</span>Los puentes de la red</a></li>
+      <li><a href="#op4"><span class="num">4</span>Probar antes de decidir</a></li>
+      <li><a href="#op5"><span class="num">5</span>Recursos en común</a></li>
+    </ol>
+
+    <div class="opcion" id="op1">
+      <div class="cab"><span class="num">1</span><h3>Con quién conversar</h3></div>
+      <p>Carla, que estudia Enfermería, y Diego, que estudia Informática, no comparten ningún tema. Se conectan a través del Hospital Zonal Sur y de dos temas puente. Ninguna búsqueda por palabras clave encontraría ese camino.</p>
+      <figure class="captura"><img src="/static/img/presentacion/caminos-puente.webp" width="1400" height="420" alt="Caminos puente: Carla, gestión de turnos, Hospital Zonal Sur y desarrollo de software hasta D. Ferreyra" loading="lazy"><figcaption>Cada camino muestra por dónde pasa y cuán raros son sus temas en la red.</figcaption></figure>
+    </div>
+
+    <div class="opcion" id="op2">
+      <div class="cab"><span class="num">2</span><h3>Actividades emergentes</h3></div>
+      <p>De la estructura del grafo salen cruces de temas de áreas distintas que nadie reúne todavía: la semilla de un taller, un proyecto o un grupo de estudio.</p>
+      <figure class="captura"><img src="/static/img/presentacion/actividad.webp" width="1400" height="458" alt="Una actividad emergente propuesta a partir de temas de áreas distintas" loading="lazy"></figure>
+    </div>
+
+    <div class="opcion" id="op3">
+      <div class="cab"><span class="num">3</span><h3>Los puentes de la red</h3></div>
+      <p>Quién une áreas que, sin esa persona, quedarían desconectadas. Para quien coordina, ahí está dónde conviene reforzar.</p>
+      <figure class="captura"><img src="/static/img/presentacion/puentes.webp" width="1385" height="868" alt="Panel de puentes estructurales de la red" loading="lazy"></figure>
+    </div>
+
+    <div class="opcion" id="op4">
+      <div class="cab"><span class="num">4</span><h3>Probar antes de decidir</h3></div>
+      <p>Se puede ver qué cambiaría en la red si se suma alguien, sin guardar nada.</p>
+      <figure class="captura"><img src="/static/img/presentacion/simulador.webp" width="1316" height="908" alt="Simulador: qué cambiaría si se suma una persona a la red" loading="lazy"></figure>
+    </div>
+
+    <div class="opcion" id="op5">
+      <div class="cab"><span class="num">5</span><h3>Recursos en común</h3></div>
+      <p>Cada persona pone a disposición lo que tiene, aunque no sepa para qué servirá: datos, un espacio, tiempo, una persona que quiere colaborar. Quien lo necesita lo reconoce y avisa «me sirve, para…»; el aviso le llega como mensaje a quien lo ofreció. A las dos semanas, las dos partes cuentan si hablaron y si sirvió.</p>
+      <div class="recursos-fig">
+        <figure class="captura"><img src="/static/img/presentacion/recursos-pongo.webp" width="1282" height="697" alt="Tarjeta «Pongo a disposición» con un recurso cargado" loading="lazy"><figcaption>Lo que cada persona pone a disposición.</figcaption></figure>
+        <figure class="captura"><img src="/static/img/presentacion/recursos-me-sirve.webp" width="410" height="482" alt="Aviso «me sirve» sobre las rotaciones del Hospital Zonal Sur" loading="lazy"><figcaption>«Me sirve, para…»</figcaption></figure>
+      </div>
+      <figure class="captura"><img src="/static/img/presentacion/recursos-seguimiento.webp" width="1240" height="263" alt="Seguimiento: ¿hablaron? ¿sirvió?" loading="lazy"><figcaption>A las dos semanas: ¿hablaron? ¿sirvió?</figcaption></figure>
+      <p>Una persona ofrecida por otra no se publica con su nombre hasta que acepte, y un acceso a medios o a espacios de gestión se publica con su propósito, sin el nombre del contacto.</p>
+    </div>
+  </section>
+
+  <section id="ia">
+    <p class="seccion-rot">¿Y la inteligencia artificial?</p>
+    <h2>El orden lo calcula el grafo</h2>
+    <div class="dos">
+      <div>
+        <p>La inteligencia artificial extrae los temas del currículum. El orden de las sugerencias sale de la estructura de la red. El modelo de lenguaje solo redacta la explicación, y solo cuando alguien la pide.</p>
+        <p>¿Por qué no dejar que el modelo decida? Porque como juez no sirve: aprueba casi cualquier par, incluso pares elegidos al azar. Reconoce el parecido, pero ante los vínculos indirectos casi no se distingue del azar.</p>
+      </div>
+      <figure class="captura" style="margin-top:0"><img src="/static/img/presentacion/explicacion-pedido.webp" width="1400" height="595" alt="Explicación de una sugerencia, redactada a pedido" loading="lazy"><figcaption>La explicación se redacta solo cuando se la pide.</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="privacidad">
+    <p class="seccion-rot">Privacidad</p>
+    <h2>Cada persona decide qué ven los demás</h2>
+    <div class="dos">
+      <div>
+        <p>Por defecto, las demás personas ven tu nombre abreviado («C. Ibáñez»). Podés mostrar tu nombre completo, ocultar tu bio o tu institución, y dejar de aparecer en sugerencias o en la búsqueda.</p>
+        <p>Los conjuntos de demostración y la red general están separados: nadie recibe sugerencias de otro conjunto. Todo el detalle está en el <a href="/privacidad">aviso de privacidad</a>.</p>
+      </div>
+      <figure class="captura" style="margin-top:0"><img src="/static/img/presentacion/misdatos-visibilidad.webp" width="1400" height="588" alt="Panel «Qué ven los demás de mí»" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <section id="medir">
+    <p class="seccion-rot">¿Cómo sabremos si sirve?</p>
+    <h2>Un piloto, con medidas fijadas de antemano</h2>
+    <p>Cada sugerencia es una hipótesis para conversar, no un veredicto. Validarla exige personas reales evaluando los vínculos. La propuesta:</p>
+    <ul class="medidas">
+      <li>Se eligen las posibilidades que interesan y se prueban con una cohorte acotada.</li>
+      <li>Antes de empezar se fija qué cuenta como éxito: por ejemplo, cuántas sugerencias despiertan interés en las dos partes y cuántas terminan en una conversación.</li>
+      <li>Las personas evalúan los vínculos <strong>a ciegas</strong>, sin saber si vienen de Rizoma o de una búsqueda común. Rizoma sirve si le gana a esa búsqueda.</li>
+      <li>Se cuenta, sin nombres, lo que cada parte responde a las dos semanas de un «me sirve»: si hablaron y si sirvió.</li>
+    </ul>
+    <figure class="captura"><img src="/static/img/presentacion/ciegas.webp" width="1400" height="521" alt="Evaluación humana a ciegas de los vínculos sugeridos" loading="lazy"></figure>
+    <div class="nota">¿Te interesa probarlo en tu institución o en tu equipo? Escribinos a <a href="mailto:maximilianoperez1981@gmail.com">maximilianoperez1981@gmail.com</a>.</div>
+  </section>
+
+  <section id="privacidad-pagina" class="privacidad-pagina">
+    <p class="seccion-rot">Cookies y privacidad de esta página</p>
+    <ul>
+      <li>Esta página no usa cookies, ni herramientas de analítica, ni publicidad, ni píxeles de seguimiento. Las tipografías y las imágenes se sirven desde este mismo servidor.</li>
+      <li>El video de YouTube solo se carga si lo activás. Desde ese momento rigen las condiciones y la <a href="https://policies.google.com/privacy?hl=es" target="_blank" rel="noopener noreferrer">política de privacidad de Google</a>.</li>
+      <li>Si marcás «Recordar mi elección», esa preferencia se guarda solo en tu navegador (no es una cookie y no se envía a ningún servidor). <span id="videoOlvidarTexto">Podés borrarla cuando quieras: <button type="button" class="boton-texto" id="videoOlvidar">olvidar mi elección sobre YouTube</button>.</span></li>
+      <li>Como cualquier sitio, el servidor registra datos técnicos de cada visita (dirección IP, fecha y página pedida) para protegerlo y resolver errores; esos registros se borran a los diez días.</li>
+      <li>Responsable: OPEN LAB, Universidad Nacional de Quilmes (Argentina). Consultas y pedidos sobre tus datos: <a href="mailto:maximilianoperez1981@gmail.com">maximilianoperez1981@gmail.com</a>. Lo que se trata al usar la aplicación está en el <a href="/privacidad">aviso de privacidad</a>.</li>
+    </ul>
+  </section>
+</main>
+<footer>
+  <strong>Rizoma</strong> · Una aplicación de Open Lab, en la Universidad Nacional de Quilmes. Desarrollo: Maximiliano Ariel Pérez, Ana Belén Gómez Reyes y Enrique Álvarez.
+  · <a href="#privacidad-pagina">Cookies y privacidad de esta página</a> · <a href="/privacidad">Aviso de privacidad</a> · <a href="/">Ingresar</a>
+</footer>
+<script>
+  // Video de YouTube en dos pasos: el reproductor (y su conexión con Google) se carga recién
+  // cuando la persona lo activa. La preferencia «recordar» vive solo en este navegador.
+  (function () {
+    var CLAVE = 'rizoma_presentacion_youtube';
+    var URL = 'https://www.youtube-nocookie.com/embed/TYQVg7U9KsE?rel=0';
+    var marco = document.getElementById('videoMarco');
+    var recordar = document.getElementById('videoRecordar');
+    function leer() { try { return localStorage.getItem(CLAVE) === 'si'; } catch (e) { return false; } }
+    function guardar(si) { try { si ? localStorage.setItem(CLAVE, 'si') : localStorage.removeItem(CLAVE); } catch (e) {} }
+    function cargar(reproducir) {
+      var f = document.createElement('iframe');
+      f.src = URL + (reproducir ? '&autoplay=1' : '');
+      f.title = 'Rizoma: qué es y para qué puede servir (video de Open Lab en YouTube)';
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      f.allowFullscreen = true;
+      marco.replaceChildren(f);
+    }
+    document.getElementById('videoPlay').addEventListener('click', function () {
+      if (recordar.checked) guardar(true);
+      cargar(true);
+    });
+    document.getElementById('videoOlvidar').addEventListener('click', function () {
+      guardar(false);
+      recordar.checked = false;
+      document.getElementById('videoOlvidarTexto').textContent = 'Listo: tu elección se borró. La próxima vez que entres, el video volverá a pedir permiso.';
+    });
+    if (leer()) { recordar.checked = true; cargar(false); }
+  })();
+</script>
+</body>
+</html>

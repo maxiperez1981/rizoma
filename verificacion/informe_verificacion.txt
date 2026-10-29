@@ -1,0 +1,69 @@
+== Veredictos del modelo durante la medicion del antes
+  modelo dijo no | sin tema en comun  | 48
+  modelo dijo si | comparten tema     | 149
+  modelo dijo si | sin tema en comun  | 203
+
+== Sugerencias por persona
+  antes : {'personas': 50, 'media': 8, 'min': 8, 'max': 8}
+  ahora : {'personas': 50, 'media': 34.96, 'min': 25, 'max': 47}
+  sugerencias de antes que ya no aparecen ahora: 59
+
+### demo.unq.08@rizoma.local | antes: 8 | ahora: 25
+  [rareza]
+    1. Valentina Nunez -- 3 temas en común; el más raro: inocuidad (2 de 50 perfiles)
+    2. Josefina Salas -- 2 temas en común; el más raro: logistica (2 de 50 perfiles)
+    3. Emiliano Rivas -- 2 temas puente: calidad alimentaria (3 de 50 perfiles) y comunicacion visual (2 de 50 perfiles) · vía Renata Esposito
+    4. Renata Esposito -- Tema en común: calidad alimentaria (3 de 50 perfiles)
+    5. Martina Lopez -- 2 temas puente: calidad alimentaria (3 de 50 perfiles) y territorio (7 de 50 perfiles) · vía Renata Esposito
+  [cruces]
+    1. Emiliano Rivas -- Conecta 2 áreas a través de 2 temas puente
+    2. Martina Lopez -- Conecta 2 áreas a través de 2 temas puente
+    3. Diego Ledesma -- Conecta 2 áreas a través de 2 temas puente
+    4. Bruno Cejas -- Conecta 2 áreas a través de 2 temas puente
+    5. Federico Sosa -- Conecta 2 áreas a través de 2 temas puente
+  [azar semilla 2026]
+    1. Martina Lopez -- Posición al azar · semilla 2026
+    2. Nicolas Vera -- Posición al azar · semilla 2026
+    3. Bruno Cejas -- Posición al azar · semilla 2026
+    4. Federico Sosa -- Posición al azar · semilla 2026
+    5. Emiliano Rivas -- Posición al azar · semilla 2026
+
+### demo.unq.21@rizoma.local | antes: 8 | ahora: 35
+  [rareza]
+    1. Emiliano Rivas -- 2 temas en común; el más raro: evaluacion de politicas (2 de 50 perfiles)
+    2. Diego Ledesma -- 2 temas puente: modelos predictivos (2 de 50 perfiles) y experiencia de usuario (2 de 50 perfiles) · vía Lautaro Gimenez
+    3. Federico Sosa -- 2 temas puente: modelos predictivos (2 de 50 perfiles) y turismo inteligente (2 de 50 perfiles) · vía Lautaro Gimenez
+    4. Renata Esposito -- 2 temas puente: evaluacion de politicas (2 de 50 perfiles) y comunicacion visual (2 de 50 perfiles) · vía Emiliano Rivas
+    5. Lautaro Gimenez -- Tema en común: modelos predictivos (2 de 50 perfiles)
+  [cruces]
+    1. Bruno Cejas -- Conecta 4 áreas a través de 5 temas puente
+    2. Diego Ledesma -- Conecta 3 áreas a través de 4 temas puente
+    3. Federico Sosa -- Conecta 3 áreas a través de 4 temas puente
+    4. Renata Esposito -- Conecta 3 áreas a través de 4 temas puente
+    5. Malena Ortiz -- Conecta 3 áreas a través de 4 temas puente
+  [azar semilla 2026]
+    1. Alan Mendez -- Posición al azar · semilla 2026
+    2. Diego Ledesma -- Posición al azar · semilla 2026
+    3. Matias Ferreyra -- Posición al azar · semilla 2026
+    4. Ezequiel Herrera -- Posición al azar · semilla 2026
+    5. Emiliano Rivas -- Posición al azar · semilla 2026
+
+### demo.unq.33@rizoma.local | antes: 8 | ahora: 26
+  [rareza]
+    1. Florencia Cabrera -- 2 temas en común; el más raro: inclusion educativa (2 de 50 perfiles)
+    2. Pablo Fernandez -- 2 temas puente: inclusion educativa (2 de 50 perfiles) y didactica (2 de 50 perfiles) · vía Florencia Cabrera
+    3. Mateo Silva -- 2 temas puente: permanencia (2 de 50 perfiles) y UX (2 de 50 perfiles) · vía Ignacio Navarro
+    4. Ignacio Navarro -- Tema en común: permanencia (2 de 50 perfiles)
+    5. Martina Lopez -- 2 temas puente: inclusion educativa (2 de 50 perfiles) y programacion (3 de 50 perfiles) · vía Florencia Cabrera
+  [cruces]
+    1. Pablo Fernandez -- Conecta 2 áreas a través de 3 temas puente
+    2. Mateo Silva -- Conecta 2 áreas a través de 2 temas puente
+    3. Martina Lopez -- Conecta 1 áreas a través de 3 temas puente
+    4. Nicolas Vera -- Conecta 1 áreas a través de 3 temas puente
+    5. Florencia Cabrera -- Conecta 1 área a través de 2 temas en común
+  [azar semilla 2026]
+    1. Mateo Silva -- Posición al azar · semilla 2026
+    2. Pablo Fernandez -- Posición al azar · semilla 2026
+    3. Ignacio Navarro -- Posición al azar · semilla 2026
+    4. Nicolas Vera -- Posición al azar · semilla 2026
+    5. Florencia Cabrera -- Posición al azar · semilla 2026

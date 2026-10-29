@@ -1,0 +1,121 @@
+
+### demo.vivo.carla@rizoma.local — 14 sugerencias
+
+  [rareza]
+    Temas en común (1)
+      1. Hospital Zonal Sur — 3 temas en común; el más raro: historia clínica digital (2 de 16 perfiles)
+    Caminos puente (2)
+      1. Diego Ferreyra — 2 temas puente: historia clínica digital (2 de 16 perfiles) y desarrollo de software (2 de 16 perfiles) · vía Hospital Zonal Sur
+      2. Rocío Álvarez — 2 temas puente: historia clínica digital (2 de 16 perfiles) y innovación en salud (2 de 16 perfiles) · vía Hospital Zonal Sur
+    Otros perfiles (sin camino en el grafo) (11)
+      · Cooperativa Reciclar Quilmes
+      · Ezequiel Luna
+      · Lucía Paz
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Prof. Marta Quiroga
+      · Sabrina Gómez
+      · Tomás Rivas
+      · Valeria Romero
+
+  [cruces]
+    Temas en común (1)
+      1. Hospital Zonal Sur — Conecta 1 área a través de 3 temas en común
+    Caminos puente (2)
+      1. Diego Ferreyra — Conecta 2 áreas a través de 4 temas puente
+      2. Rocío Álvarez — Conecta 1 área a través de 4 temas puente
+    Otros perfiles (sin camino en el grafo) (11)
+      · Cooperativa Reciclar Quilmes
+      · Ezequiel Luna
+      · Lucía Paz
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Prof. Marta Quiroga
+      · Sabrina Gómez
+      · Tomás Rivas
+      · Valeria Romero
+
+  [azar · semilla 2026]
+    Temas en común (1)
+      1. Hospital Zonal Sur — Posición al azar · semilla 2026
+    Caminos puente (2)
+      1. Rocío Álvarez — Posición al azar · semilla 2026
+      2. Diego Ferreyra — Posición al azar · semilla 2026
+    Otros perfiles (sin camino en el grafo) (11)
+      · Cooperativa Reciclar Quilmes
+      · Ezequiel Luna
+      · Lucía Paz
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Prof. Marta Quiroga
+      · Sabrina Gómez
+      · Tomás Rivas
+      · Valeria Romero
+
+### demo.vivo.lucia@rizoma.local — 15 sugerencias
+
+  [rareza]
+    Temas en común (1)
+      1. Prof. Marta Quiroga — 3 temas en común; el más raro: ciencia publica (2 de 16 perfiles)
+    Caminos puente (1)
+      1. Tomás Rivas — 2 temas puente: ciencia publica (2 de 16 perfiles) y analisis genomico (2 de 16 perfiles) · vía Prof. Marta Quiroga
+    Otros perfiles (sin camino en el grafo) (13)
+      · Carla Ibáñez
+      · Cooperativa Reciclar Quilmes
+      · Diego Ferreyra
+      · Ezequiel Luna
+      · Hospital Zonal Sur
+      · Julián Medina
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Rocío Álvarez
+      · Sabrina Gómez
+      · Valeria Romero
+
+  [cruces]
+    Temas en común (1)
+      1. Prof. Marta Quiroga — Conecta 1 área a través de 3 temas en común
+    Caminos puente (1)
+      1. Tomás Rivas — Conecta 1 área a través de 5 temas puente
+    Otros perfiles (sin camino en el grafo) (13)
+      · Carla Ibáñez
+      · Cooperativa Reciclar Quilmes
+      · Diego Ferreyra
+      · Ezequiel Luna
+      · Hospital Zonal Sur
+      · Julián Medina
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Rocío Álvarez
+      · Sabrina Gómez
+      · Valeria Romero
+
+  [azar · semilla 2026]
+    Temas en común (1)
+      1. Prof. Marta Quiroga — Posición al azar · semilla 2026
+    Caminos puente (1)
+      1. Tomás Rivas — Posición al azar · semilla 2026
+    Otros perfiles (sin camino en el grafo) (13)
+      · Carla Ibáñez
+      · Cooperativa Reciclar Quilmes
+      · Diego Ferreyra
+      · Ezequiel Luna
+      · Hospital Zonal Sur
+      · Julián Medina
+      · Martín Sosa
+      · Nahuel Ortiz
+      · Paula Benítez
+      · Prof. Gustavo Herrera
+      · Rocío Álvarez
+      · Sabrina Gómez
+      · Valeria Romero
